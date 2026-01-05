@@ -103,12 +103,29 @@ public class LoopMain {
 //			if ( i==40) break;
 //		}
 		
-		while (true) {
-			int num = (int)Math.floor(Math.random()*20)+1;
-			System.out.println(num);
-			if (num == 11) break;
-		}
+//		while (true) {
+//			int num = (int)Math.floor(Math.random()*20)+1;
+//			System.out.println(num);
+//			if (num == 11) break;
+//		}
 		
+		int com = (int)Math.floor(Math.random()*50)+1; 
+		
+		while (true) {
+			System.out.println("1~50 중 입력 : "); // 반복해야할 요소들이므로 반복문 안에 적음
+			int user = kbd.nextInt();
+			
+			if (user >com) {
+				System.out.println(" DOWN ");
+			}
+			if (user <com) {
+				System.out.println(" UP ");
+			}
+			if (user == com) {
+				System.out.println(" 정답!" );
+				break;
+			}
+		}
 		
 		
 //		kbd.close();
@@ -124,7 +141,15 @@ public class LoopMain {
 	게임을 진행 하면서 1판 끝날 때마다 
 	몇 승, 몇 패, 몇 무 전적 출력하기
 
-
+	+ 과제2 - 내일 (1/6일자) 실습 : 랜덤 숫자 맞추기, 업다운 게임 제작! 입장 바꿔서? 내가 숫자를 제시하고, 컴퓨터도 범위를 좁혀 가며 맞출 수 있도록.
+	랜덤 범위가 줄어들어야. up & down . user 변수랑 com 변수를 서로 맞바꿔줘야. 
+	ex) 내가 37 제시
+	range / show up /result(range) 
+	1~50 	25 		up 
+	26~50 	40 		down
+	26~39 	27 		up
+	28~39 	31 		up
+	32~39 
 
 
  * 반복문 - for, while, do~while 반복문이란 특정 코드를 정해진 횟수만큼 동작 시키는 과정이다. 또는 횟수의 제한 없이 동작
