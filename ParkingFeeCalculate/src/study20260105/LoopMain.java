@@ -128,7 +128,7 @@ public class LoopMain {
 		}
 		
 		
-//		kbd.close();
+		kbd.close();
 		
 	}
 }
