@@ -18,7 +18,10 @@ public class Plus20260105 {
 		
 		Scanner kbd = new Scanner(System.in);
 		
+		// 최대, 최소값 변수를 따로 두는 방법이...
 		int user = kbd.nextInt();
+		int max = 50; // Max number
+		int min = 1; // Min number
 		
 		while (true) {
 			System.out.println("1~50 중 입력 : ");
