@@ -34,7 +34,7 @@ public class Task20260105 {
 				lose++;}
 			System.out.println("승리 : " + win + " 무승부 : " + draw + " 패배 : " + lose); // lose 변수 선언 및 ++
 																	// 처리시 패배가 계속 15로 잡힘
-																	// for  문 안쪽에 써줘야 했네...
+																	// for  문 안쪽에 써줘야 했네... 
 		}
 	}
 }
