@@ -29,7 +29,7 @@ public class Plus20260105 {
 		
 		if (user > com ) { // 범위 좁히기에서 감이 안 잡히네;;;
 			System.out.println("down");
-			com -=; 
+			com --; 
 		}
 			
 		}
