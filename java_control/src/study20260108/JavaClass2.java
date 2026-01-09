@@ -1,8 +1,15 @@
 package study20260108;
 
+import study20260109.Member;
+
 public class JavaClass2 {
 
 	public static void main(String[] args) {
+		
+//		Member member = new Member(); // 패키지가 다르므로 import 해야 사용 가능
+										// 다른 패키지에 있는 클래스 사용
+										// 하지만 Member 클래스는 Public이 아닌,
+										// default 제어자이므로... 이 패키지에서는 이용 불가!
 		
 		Movie movie = new Movie();   
 	    // new movie() 생성자 메서드 ; 초기데이터(초기화)
