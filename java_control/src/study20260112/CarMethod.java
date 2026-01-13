@@ -6,19 +6,22 @@ public class CarMethod {
 
 	public static void main(String[] args) {
 		// 자동차
-		Vehicle vehicle = new Vehicle("Kia", "Hybrid", 2026, "Auto6");
-		System.out.println( vehicle );
+//		Vehicle vehicles = new Vehicle("Kia", "Hybrid", 2026, "Auto6");
 		
-		Scanner sc = new Scanner(System.in);		
+		Vehicle[] vehicles = {
+				new Vehicle("Kia","Hybrid",2026,"Auto6"),
+				new Vehicle("Hyundai","Hybrid",2013,"Auto6"),
+				new Vehicle("BMW","Gasoline",2019,"DCT6"),
+				new Vehicle("Benz","Diesel",2020,"Auto8"),
+				new Vehicle("Renault","Gasoline",2011,"CVT")				
+		};
 		
-		vehicle.DriveMode();
-		if(sc.equals("Normal")) {
-			System.out.println("파란 조명과 함께 무난한 주행을 시작합니다.");
-		} if(sc.equals("Eco")) {
-			System.out.println("초록 조명과 함께 친환경적 주행을 시작합니다.");
-		} if(sc.equals("Sports")) {
-			System.out.println("빨간 조명과 함께 다이나믹한 주행을 시작합니다.");
-		}
+		System.out.println( vehicles );
+		
+		Driving dm = new Driving();				
+		
+		dm.DriveMode( vehicles );
 	}
-
 }
+
+	
