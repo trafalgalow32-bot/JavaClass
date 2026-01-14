@@ -1,6 +1,6 @@
 package study20260112;
 
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class CarMethod {
 
@@ -16,11 +16,13 @@ public class CarMethod {
 				new Vehicle("Renault","Gasoline",2011,"CVT")				
 		};
 		
-		System.out.println( vehicles );
+//		System.out.println( vehicles );
 		
-		Driving dm = new Driving();				
+		Driving dm = new Driving();			
 		
-		dm.DriveMode( vehicles );
+		dm.selectCar ( vehicles ); // 이렇게 하면 연식 선택은 잘됨!
+		
+//		dm.DriveMode( vehicles ); 
 	}
 }
 
