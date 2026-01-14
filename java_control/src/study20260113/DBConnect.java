@@ -35,17 +35,35 @@ public class DBConnect {
 		
 		Product[] products = new Product[6];
 		// 쿼리문 작성하기
-		String sql = "select * from product";
-		
-		// 쿼리문 보내기
+		String sql = "select * from product"; // product 테이블 모든 데이터 조회
+				
 		try {
-		st = conn.createStatement();
+			// 쿼리문 보내기
+			st = conn.createStatement(); // Statement 생성
+			// 결과 받기
+			rs = st.executeQuery(sql); // 쿼리문 보내고 결과를 ResultSet에 저장
+					
 		} catch ( Exception e) {
-			
+			System.out.println( "쿼리문 실패" );
 		}
-		// 결과 받기
 		
 		// 데이터들을 product 객체에 저장하기
+		// 2차원 배열처럼? resultSet에? 매트리스 구조? 인덱스 대신 컬럼명!
+		try {
+			int i = 0;	
+			while(rs.next()) { // Boolean 타입 변수 반환
+				
+				Product temp = new Product(
+						rs.getString("item_name") , rs.getInt("price"), 
+						// 데이터의 컬럼명 입력(변수명X)
+						rs.getInt("stock"), rs.getString("description")
+				);
+				products[i] = temp;
+				i++;
+			}
+		} catch(Exception e) {
+			System.out.println("객체생성 실패");
+		}
 		
 		return products;
 		
