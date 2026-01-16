@@ -13,7 +13,6 @@ public abstract class Appliance { // 가전 제품(부모클래스)
 	}
 	
 	
-	
 	@Override
 	public String toString() {
 		return "Appliance [onoff=" + onoff + ", name=" + name + ", powerCon=" + powerCon + "]";
