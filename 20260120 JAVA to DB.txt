@@ -1,0 +1,120 @@
+create table jusorok (
+no int not null auto_increment primary key,
+name varchar(50) not null,
+phone varchar(15) not null,
+createdDate DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+
+>>> DB 설계(모델링)
+* 회원테이블 : member
+회원번호 no int not null auto-increment unique
+아이디 id varchar (50) not null primary key
+비밀번호 password varchar(50) not null
+이름 name varchar(50) not null
+전화번호 phone varchar(50) not null
+등록일 createdDate DATETIME DEFAULT CURRENT_TIMESTAMP
+
+create table member (
+no int not null auto_increment unique,
+id varchar(50) not null primary key,
+password varchar(50) not null,
+name varchar(50) not null,
+phone varchar(50) not null,
+createdDate DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+insert into member (no, 	id, 	password, name, 	phone,		createdDate)
+values		 (null, 	'hong',    '1234',	 '홍길동', '010-1111-2222',	now());
+
+insert into member values
+(null, 	'lee',    '12345',	 '이성순', '010-2222-2222',	now());
+
+insert into member values
+(null, 	'jang',    '123456',	 '장천용', '010-3333-3333',	now());
+
+update member set name = '홍성순' where no = 4;
+
+oracle
+mysql == mariaDB
+ms-sql
+postgreSQL
+MongoDB
+SQLlite
+...
+
+ANSI 표준
+
+unique
+- 중복x
+- null 허용함
+
+CHECK (price > 0 ) => 가격이 0보다 큰 값만 price에 입력할 수 있다. 
+
+select : 조회, 검색
+insert : 삽입, 추가, 등록
+update : 수정
+delete : 삭제
+
+delete from member; // member 테이블 내 모든 필드 삭제
+delete from member where name = '홍길동'; // 이름이 홍길동이라는 필드 삭제 (조건을 달아서 삭제하는 방법!)
+
+* SQL 명령어 분류
+DDL : 	데이터 정의어 	- create, alter, drop, truncate
+DML : 	데이터 조작어 	- select, insert, update, delete => 테이블 안에 들어있는 레코드 대상
+DCL : 	데이터 제어어 	- grant, revoke
+TCL : 	트랜잭션 		- commit, rollback, savepoint
+
+* 회원관리 : <목록>, 상세보기, <등록>, <수정>, <삭제>
+
+이걸! 자바 프로그램에서 구현!!
+
+1/21 '상세보기'도 구현!
+상품관리 프로그램??
+
+인터프리터(interpreter) 통역
+컴파일러(compiler) 번역 (모아서 한꺼번에 번역!)
+
+* 객체지향의 4대 특징
+- 추상화
+- 상속
+- ★다형성
+- 캡슐화
+
+* 예외처리 : try ~ catch, throws
+- 갑작스러운 오류에도 프로그램이 죽지 않고 우아하게 대처.
+
+1. throws란? (책임 전가)
+throws 예외 발생 후 던져 버리는! 
+
+* 영수증 (실습 : 1/21)
+
+예시)
+라면	1000	5	5000
+맥주	5000	3	15000
+소주	5000	2	10000
+-----------------------------------------
+합계 : 30000
+
+
+* 내부클래스 
+- (멤버) 필드
+- (멤버) 메소드
+
+* 정적 내부 클래스(Static 객체 생성 안함!)
+
+* 지역 클래스 : "메서드 안에서만"(중괄호 안에서만!)
+
+* 익명 클래스
+
+* 추상 메소드
+public void aaa();
+
+응집도 (높을수록 유리)
+결합도 (낮을수록 유리)
+
+module
+
+<?> : 비제한, 모든 타입, 타입에 무관한 단순 가능, 타입에 상관없이 공통적인 기능(출력, 크기 확인 등)을 수행할 때 사용
+<? extends T> : 상한 제한, T와 그 자식들, 데이터 읽기 전용, 특정 타입의 자식들을 모두 받아 데이터를 안전하게 읽기(Read) 위해 사용
+<? super T> : 하한 제한, T와 그 부모들, 데이터 쓰기 전용, 특정 타입의 부모들을 받아 데이터를 안전하게 저장(Write) 하기 위해 사용
