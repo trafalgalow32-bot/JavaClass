@@ -1,5 +1,0 @@
-6.3 문자열
-1. 문자열의 개요: 문자의 배열.
-
-String Str = "Java";
-String Str = new String("Java");
