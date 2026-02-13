@@ -4,6 +4,5 @@
 /**
  * 
  */
-module java_control {
-	requires java.sql;
+module JavaClass {
 }
