@@ -1,0 +1,92 @@
+Chapter 13. 컬렉션
+
+13.1 컬렉션 
+1. 컬렉션의 필요성: 배열과 달리 유구 사항에 따라 크기를 변경할 수 있고, 다양한 유형의 데이터를 저장 가능.
+
+2. 컬렉션 프레임워크의 개념: 많은 데이터를 쉽고 효과적으로 처리할 수 있는 표준화된 방법을 제공하는 클래스의 집합.
+데이터를 저장하는 자료 구조와 데이터를 처리하는 알고리즘을 구조화하여 클래스로 구현해놓은 인터페이스.
+
+13.2 List 컬렉션
+Collection 인퍼페이스의 자식 인터페이스. ArrayList, LinkedList, Vector
+
+1. ArrayList: List 인터페이스를 구현한 클래스. 배열 기반 데이터 구조의 구현 제공. 가변적 크기라 기능성과 유연성이 뛰어남
+
+ ㅇ ArrayList 선언: ArrayList(), ArrayList(Collection C), ArrayList(*int initialCapacity)
+ ㅇ ArrayList 요소 삽입: add() 메서드 사용
+ ㅇ ArrayList 요소 수정: set() 메서드 사용
+ ㅇ ArrayList 요소 삭제: remove() 메서드 사용
+ 
+ ㅇ ArrayList 크기 구하기: size() 메서드 사용
+ ㅇ ArrayList 요소 값 출력: get(index) 메서드 사용
+ ㅇ ArrayList 요소 값 검색: contains(value) 메서드 사용, 요소 값 있는 인덱스를 찾는 건 indexOf(value) 메서드를 사용, 값이 없으면 -1 반환
+ 
+2. LinkedList: 데이터와 포인터를 가진 요소가 선형 순서로 저장. 데이터를 담고 있는 요소들이 연결되어 있고, 
+요소의 포인터가 다음 요소를 연결하는 구조. 인덱스가 없어 특정 요소에 접근 시 순차 탐색을 함으로 검색 속도가 떨어짐.
+
+ ㅇ LinkedList 선언: LinkedList(), LinkedList(Collection C)
+ ㅇ LinkedList 요소 삽입: add(index, value), addFirst(value), addLast(value)
+ ㅇ LinkedList 요소 수정: set() 메서드 사용
+ ㅇ LinkedList 요소 삭제: remove(index, value), removeFirst(), removeLast(), clear(); 모든 요소 삭제
+ 
+ ㅇ LinkedList 크기 구하기: size()
+ ㅇ LinkedList 요소 값 출력: get(index)
+ ㅇ LinkedList 요소 값 검색: 원하는 요소값 검색 contains(value), 요소 값 있는 인덱스 검색 indexOf(value) 없으면 -1 반환
+ 
+3. Vector: 자동 동기화를 보장하는 선형 순서의 List 인터페이스. 멀티스레드 환경에서 안정적으로 사용 가능.
+
+ ㅇ Vector 선언: Vector(), Vector(Collection C), Vector(int initialCapacity), Vector(int initialCapacity, int capacityIncrement)
+ ㅇ Vector 요소 삽입: add() 메서드 사용
+ ㅇ Vector 요소 수정: set() 메서드 사용
+ ㅇ Vector 요소 삭제: remove(), clear() removeALLElements() 모든 요소 삭제
+ 
+ ㅇ Vector 크기 구하기: size()
+ ㅇ Vector 요소 값 출력: get(index)
+ ㅇ Vector 요소 값 검색: 원하는 요소값 검색 contains(value), 요소 값 있는 인덱스 검색 indexOf(value) 없으면 -1 반환
+
+ 13.3 Set 컬렉션: Collection 인터페이스의 자식 인터페이스로, 비선형 자료 구조의 형태로 요소를 저장.
+ 요소를 인덱스로 관리하지 않으므로 저장 순서가 보장되지 않음.
+ 대표적인 클래스: HastSet, TreeSet, LinkeHashSet
+ 
+ 1. HashSet: Set 컬렉션을 구현하는 대표적인 클래스. 해싱(hashing)이라는 방법으로 정보를 저장하는 해시 테이블을 사용.
+ 요소 목록은 비선형 순서로 저장되고, 중복 저장은 불가.
+ ㅇ HashSet 선언: HashSet(), HashSet(Collection C), HashSet(int initialCapacity), HashSet(int initialCapacity, float loadFactor)
+ ㅇ HashSet 요소 삽입: add() 메서드 사용
+ ㅇ HashSet 요소 삭제: remove(), clear() 모든 요소 삭제
+ 
+ ㅇ HashSet 크기 구하기: size()
+ ㅇ HashSet 요소 값 출력: get(index)
+ ㅇ HashSet 요소 값 검색: 원하는 요소값 검색 contains(value)
+ 
+ 2. TreeSet: HashSet과 달리 이진 탐색 트리 구조로 데이터를 저장하므로 데이터를 추가 및 삭제시
+ HastSet보다 시간이 더 걸리지만 데이터를 검색하거나 정렬시 효율적.
+ ㅇ TreeSet 선언: TreeSet(), TreeSet(Collection C), TreeSet(Comparator comparator), TreeSet(SortedSet s)
+ ㅇ TreeSet 요소 삽입: add() 메서드 사용, 내부에 값이 존재하지 않을 시 TreeSet에 추가 후 true 반환, 내부에 값이 존재하면 false 반환
+  
+ ㅇ TreeSet 크기 구하기: size()
+ ㅇ TreeSet 요소 값 출력: first(), last(), Iterator
+ ㅇ TreeSet 요소 값 검색: 원하는 요소값 검색 contains(value)
+ 
+13.4 Map 컬렉션: 키(key)와 값(value)으로 구성된 자료 구조의 형태로 데이터를 저장. 
+키는 중복 저장이 불가하지만, 값은 중복 저장이 가능.
+1. HashMap: 저장 순서 보장X. 키와 값을 쌍으로 저장하기 위한 Map 기반 컬렉션.
+HashMap(Key, Value). 많은 양의 데이터를 검색하는 데 유용.
+
+ ㅇ HashMap 선언: HashMap(), HashMap(int initialCapacity), HashMap(int initialCapacity, float loadFactor), HashMap(Map m)
+ ㅇ HashMap 요소 삽입: put(key, value) 메서드 사용
+ ㅇ HashMap 요소 수정: replace(key, value) 메서드 사용
+ ㅇ HashMap 요소 삭제: remove(key), clear() 모든 요소 삭제
+ 
+ ㅇ HashMap 크기 구하기: size()
+ ㅇ HashMap 요소 값 출력: get(key), entrySet() & KeySet() => 전체 요소 값 출력
+ ㅇ HashMap 요소 값 검색: 원하는 요소값 검색 contains(value)
+
+2. TreeMap: 키와 값을 쌍으로 저장하기 위한 Map 기반 컬렉션. 요소를 중복해서 저장할 수 없고, 저장 순서가 유지되지 않는 비선형 트리 기반 데이터 구조의 구현 제공.
+ 
+ ㅇ TreeMap 선언: TreeMap(), TreeMap(Comparator comparator), TreeMap(Map m), TreeMap(SortedMap m)
+ ㅇ TreeMap 요소 삽입: put(key, value) 메서드 사용
+ ㅇ TreeMap 요소 수정: replace(key, value) 메서드 사용
+ ㅇ TreeMap 요소 삭제: remove(key), clear() 모든 요소 삭제
+ 
+ ㅇ TreeMap 크기 구하기: size()
+ ㅇ TreeMap 요소 값 출력: get(key), entrySet() & KeySet() => 전체 요소 값 출력
+ ㅇ TreeMap 요소 값 검색: 원하는 요소값 검색 contains(value) 
