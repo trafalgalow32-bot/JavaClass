@@ -1,4 +1,4 @@
-package exam15;
+package InstructorB.src.exam15;
 
 public class Product {
 	// 상품 

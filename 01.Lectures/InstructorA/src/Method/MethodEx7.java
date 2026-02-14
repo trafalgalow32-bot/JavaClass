@@ -1,6 +1,4 @@
-package Method;
-
-import java.util.Scanner;
+package InstructorA.src.Method;
 
 public class MethodEx7 { // 입력이 있고 출력이 없는 메서드
 	public static void calculate(int x, double y) { 

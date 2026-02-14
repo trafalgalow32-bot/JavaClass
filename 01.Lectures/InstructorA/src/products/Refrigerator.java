@@ -1,6 +1,6 @@
-package products;
+package InstructorA.src.products;
 
-import common.Appliance; // 다른 패키지에서 끌어왔으!
+import InstructorA.src.common.Appliance;
 
 public class Refrigerator extends Appliance { // 냉장고
 	

@@ -1,6 +1,4 @@
-package study20260113;
-
-import java.util.Arrays;
+package InstructorA.src.study20260113;
 
 public class Method3 {
 

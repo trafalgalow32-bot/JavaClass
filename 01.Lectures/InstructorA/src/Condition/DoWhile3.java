@@ -1,4 +1,4 @@
-package Condition;
+package InstructorA.src.Condition;
 
 public class DoWhile3 {
 

@@ -1,4 +1,4 @@
-package Method;
+package InstructorA.src.Method;
 
 public class MethodEx8 { // 메서드 오버로딩
 	

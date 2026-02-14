@@ -1,4 +1,4 @@
-package exam28; // 왜 이걸 다른 패키지에 만들어서 import를 시키고 앉아 있냐!
+package InstructorB.src.exam28; // 왜 이걸 다른 패키지에 만들어서 import를 시키고 앉아 있냐!
 
 public class Information {
 	// 아이디 비밀번호 이름 연락처 주소

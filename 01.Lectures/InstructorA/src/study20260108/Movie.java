@@ -1,4 +1,4 @@
-package study20260108;
+package InstructorA.src.study20260108;
 
 public class Movie {
 	String title; // 영화 제목

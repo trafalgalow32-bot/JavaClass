@@ -1,4 +1,4 @@
-package Array;
+package InstructorA.src.Array;
 
 public class ArrayEx6 {
 // 2차원 배열 심화: 두 행렬의 합

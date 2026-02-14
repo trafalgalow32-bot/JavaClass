@@ -1,6 +1,6 @@
-package dto;
+package InstructorA.src.dto;
 
-import able.Actionable;
+import InstructorA.src.able.Actionable;
 
 public class Member implements Actionable{
 	

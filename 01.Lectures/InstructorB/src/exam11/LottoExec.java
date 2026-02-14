@@ -1,4 +1,4 @@
-package exam11;
+package InstructorB.src.exam11;
 
 import java.util.HashSet;
 import java.util.Random;

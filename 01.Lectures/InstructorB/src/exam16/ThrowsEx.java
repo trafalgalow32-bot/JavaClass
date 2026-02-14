@@ -1,4 +1,4 @@
-package exam16;
+package InstructorB.src.exam16;
 
 public class ThrowsEx {
 	

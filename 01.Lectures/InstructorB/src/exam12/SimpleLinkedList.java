@@ -1,4 +1,4 @@
-package exam12;
+package InstructorB.src.exam12;
 
 public class SimpleLinkedList {
 

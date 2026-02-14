@@ -1,4 +1,4 @@
-package Collection;
+package InstructorA.src.Collection;
 // 회사 클래스
 public class Company {
 	// 회사명, 지역,  채용 업무

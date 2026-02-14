@@ -1,7 +1,6 @@
-package dto;
+package InstructorA.src.dto;
 
-import able.Actionable;
-import able.CafeOrder;
+import InstructorA.src.able.CafeOrder;
 
 public abstract class BaseOrder implements CafeOrder{
 	

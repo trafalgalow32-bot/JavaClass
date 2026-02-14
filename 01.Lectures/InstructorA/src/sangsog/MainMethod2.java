@@ -1,10 +1,10 @@
-package sangsog;
+package InstructorA.src.sangsog;
 
-import animals.Bird;
-import animals.Cat;
-import animals.Dog;
-import animals.Rabbit;
-import common.Animal;
+import InstructorA.src.animals.Bird;
+import InstructorA.src.animals.Cat;
+import InstructorA.src.animals.Dog;
+import InstructorA.src.animals.Rabbit;
+import InstructorA.src.common.Animal;
 
 public class MainMethod2 {
 

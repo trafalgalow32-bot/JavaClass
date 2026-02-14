@@ -1,6 +1,6 @@
-package animals;
+package InstructorA.src.animals;
 
-import common.Animal;
+import InstructorA.src.common.Animal;
 
 public class Dog extends Animal {
 	

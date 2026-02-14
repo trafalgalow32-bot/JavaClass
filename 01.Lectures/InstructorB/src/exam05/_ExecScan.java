@@ -1,4 +1,4 @@
-package exam05;
+package InstructorB.src.exam05;
 
 import java.time.LocalDate;
 import java.util.Scanner;

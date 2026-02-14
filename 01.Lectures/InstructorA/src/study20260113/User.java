@@ -1,4 +1,4 @@
-package study20260113;
+package InstructorA.src.study20260113;
 
 public class User { //데이터 저장을 위한 클래스
 	

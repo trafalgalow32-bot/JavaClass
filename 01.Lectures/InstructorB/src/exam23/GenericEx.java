@@ -1,4 +1,4 @@
-package exam23;
+package InstructorB.src.exam23;
 
 public class GenericEx {
 	public static void main(String[] args) {

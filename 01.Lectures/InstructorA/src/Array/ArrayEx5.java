@@ -1,4 +1,4 @@
-package Array;
+package InstructorA.src.Array;
 
 public class ArrayEx5 {
 // 2차원 배열 심화

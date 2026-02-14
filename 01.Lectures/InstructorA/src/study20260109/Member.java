@@ -1,4 +1,4 @@
-package study20260109;
+package InstructorA.src.study20260109;
 
 public class Member {
 	// 내부 클래스(중괄호 안), 나머지는 모두 Member 클래스 외부!

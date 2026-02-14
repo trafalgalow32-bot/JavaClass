@@ -1,6 +1,6 @@
-package dto;
+package InstructorA.src.dto;
 
-import able.CafeOrder;
+import InstructorA.src.able.CafeOrder;
 
 public class Cafe {
 	private String cafeName;

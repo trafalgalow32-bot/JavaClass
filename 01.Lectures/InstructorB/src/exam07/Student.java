@@ -1,4 +1,4 @@
-package exam07;
+package InstructorB.src.exam07;
 
 public class Student { //데이터클래스 ; 한 사람 분의 데이터를 저장! 한 사람당 객체 한 개! 클래스란? 설계도; 종이쪼가리!
 	// 이 설계도를 바탕으로 나온 결과물, 즉 물건이 객체! 한 사람분의 데이터를 저장하는 게 객체!

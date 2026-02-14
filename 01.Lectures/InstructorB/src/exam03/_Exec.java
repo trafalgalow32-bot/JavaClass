@@ -1,4 +1,4 @@
-package exam03;
+package InstructorB.src.exam03;
 
 import java.util.ArrayList; // 첫글자가 대문자, 따라서 클래스!
 import java.util.List;

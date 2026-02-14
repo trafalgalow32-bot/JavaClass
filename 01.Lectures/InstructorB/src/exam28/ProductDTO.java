@@ -1,4 +1,4 @@
-package exam28;
+package InstructorB.src.exam28;
 
 public class ProductDTO { //객체에 저장! 데이터클래스에!
 	private String productName;

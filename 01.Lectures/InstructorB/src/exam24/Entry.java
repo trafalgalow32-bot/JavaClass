@@ -1,4 +1,4 @@
-package exam24;
+package InstructorB.src.exam24;
 
 // K와 V, 두 개의 타입을 파라미터로 정의
 public class Entry <K, V>{

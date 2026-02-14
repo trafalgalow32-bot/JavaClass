@@ -1,4 +1,4 @@
-package Method;
+package InstructorA.src.Method;
 
 public class MethodEx2 { // 매개변수는 없고 반환값이 있는 메서드
 

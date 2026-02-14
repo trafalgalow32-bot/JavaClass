@@ -1,4 +1,4 @@
-package Method;
+package InstructorA.src.Method;
 
 public class MethodEx5 { // 매개변수와 반환값 없는 메서드
 	// 매개변수 없이 1부터 10의 합을 구하여 출력

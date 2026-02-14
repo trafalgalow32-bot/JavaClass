@@ -1,4 +1,4 @@
-package study20260112;
+package InstructorA.src.study20260112;
 
 public class Student {
 	

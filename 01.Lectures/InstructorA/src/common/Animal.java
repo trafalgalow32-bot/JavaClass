@@ -1,4 +1,4 @@
-package common;
+package InstructorA.src.common;
 
 public abstract class Animal { // 부모 클래스
 	

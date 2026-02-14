@@ -1,4 +1,4 @@
-package exam06;
+package InstructorB.src.exam06;
 
 import java.util.ArrayList;
 import java.util.List;

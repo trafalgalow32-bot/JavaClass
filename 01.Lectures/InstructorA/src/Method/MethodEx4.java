@@ -1,4 +1,4 @@
-package Method;
+package InstructorA.src.Method;
 
 import java.util.Scanner;
 

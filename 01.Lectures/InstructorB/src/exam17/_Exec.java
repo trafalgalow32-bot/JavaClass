@@ -1,4 +1,4 @@
-package exam17;
+package InstructorB.src.exam17;
 
 // 인스턴스 내부 클래스
 // 외부 클래스의 인스턴스가 생성되어야만 내부 클래스도 존재할 수 있습니다. 

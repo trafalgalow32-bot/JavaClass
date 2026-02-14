@@ -1,4 +1,4 @@
-package study20260108;
+package InstructorA.src.study20260108;
 
 public class Music {
 	String title; // 음악 제목

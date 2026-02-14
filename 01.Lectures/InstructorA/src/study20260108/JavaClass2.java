@@ -1,6 +1,4 @@
-package study20260108;
-
-import study20260109.Member;
+package InstructorA.src.study20260108;
 
 public class JavaClass2 {
 

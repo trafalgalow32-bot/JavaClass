@@ -1,6 +1,6 @@
-package dto;
+package InstructorA.src.dto;
 
-import able.Attendance;
+import InstructorA.src.able.Attendance;
 
 public class AppAttend implements Attendance {
 
@@ -21,6 +21,18 @@ public class AppAttend implements Attendance {
 	@Override
 	public boolean isPresent() {
 		return present;
+	}
+
+	@Override
+	public void move() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void drink() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

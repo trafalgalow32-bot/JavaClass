@@ -1,4 +1,4 @@
-package study20260113;
+package InstructorA.src.study20260113;
 
 public class Method4 {
 

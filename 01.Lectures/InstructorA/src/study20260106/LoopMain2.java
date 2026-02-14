@@ -1,4 +1,4 @@
-package study20260106;
+package InstructorA.src.study20260106;
 
 import java.util.Scanner;
 

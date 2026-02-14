@@ -1,4 +1,4 @@
-package able;
+package InstructorA.src.able;
 
 public interface CafeOrder {
 	void takeOrder(); // 주문받기

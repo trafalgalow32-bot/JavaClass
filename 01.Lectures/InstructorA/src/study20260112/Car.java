@@ -1,4 +1,4 @@
-package study20260112;
+package InstructorA.src.study20260112;
 
 public class Car { // 자동차 예시를 통한 상속 개념 이해
 	

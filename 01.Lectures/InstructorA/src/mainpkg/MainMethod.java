@@ -1,8 +1,6 @@
-package mainpkg;
+package InstructorA.src.mainpkg;
 
-import able.Actionable;
-import dto.Cafe;
-import dto.Member;
+import InstructorA.src.dto.Cafe;
 
 public class MainMethod {
 

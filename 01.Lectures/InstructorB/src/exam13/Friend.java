@@ -1,4 +1,4 @@
-package exam13;
+package InstructorB.src.exam13;
 
 public class Friend {
 	String name; // 내 이름(Data)

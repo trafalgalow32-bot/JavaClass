@@ -1,4 +1,4 @@
-package Information;
+package InstructorA.src.Information;
 
 public class PersonInfo {
 	private String Name; // 이름

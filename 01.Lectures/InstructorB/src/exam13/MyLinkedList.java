@@ -1,4 +1,4 @@
-package exam13;
+package InstructorB.src.exam13;
 
 public class MyLinkedList {
 	private Node head; // 첫 번째 노드를 가리키는 변수

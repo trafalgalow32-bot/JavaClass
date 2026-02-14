@@ -1,4 +1,4 @@
-package StringArray;
+package InstructorA.src.StringArray;
 
 
 public class StringArrayEx1 {

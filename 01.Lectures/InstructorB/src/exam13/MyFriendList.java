@@ -1,4 +1,4 @@
-package exam13;
+package InstructorB.src.exam13;
 
 public class MyFriendList {
 	Friend head;

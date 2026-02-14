@@ -1,4 +1,4 @@
-package exam18;
+package InstructorB.src.exam18;
 
 public class School {
 	static String name = "자바고등학교";

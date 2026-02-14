@@ -1,11 +1,9 @@
-package sangsog;
+package InstructorA.src.sangsog;
 
-import javax.security.auth.login.AppConfigurationEntry;
-
-import common.Appliance;
-import products.Aircon;
-import products.Refrigerator;
-import products.Television;
+import InstructorA.src.common.Appliance;
+import InstructorA.src.products.Aircon;
+import InstructorA.src.products.Refrigerator;
+import InstructorA.src.products.Television;
 
 public class MainMethod {
 
@@ -52,14 +50,14 @@ public class MainMethod {
 		// 메서드를 중점으로 다루는 클래스가 여러 개라면 추상 부모 클래스 또는 인터페이스로 묶어준다.
 		
 		Aircon air = new Aircon("캐리어",290);
-		Television tv = new Television();
+//		Television tv = new Television();
 		
 //		Appliance app1 = new Appliance(); // 추상클래스인 부모클래스는 객체 생성 불가
 		Appliance app1;
 		app1 = air;
 		// 하나의 부모 클래스 타입으로 서로 다른 타입을 다루는 개념 = > ★ 다형성! ★
 		Appliance app2 = new Television();
-		app2.ch = 34; // 얘는 불가!
+//		app2.ch = 34; // 얘는 불가!
 		Appliance app3 = new Refrigerator();
 		Appliance app4 = new Aircon();
 	}

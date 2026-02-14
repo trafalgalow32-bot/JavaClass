@@ -1,4 +1,4 @@
-package exam17;
+package InstructorB.src.exam17;
 
 public class Smartphone {
 	private String model = "Galaxy S24";

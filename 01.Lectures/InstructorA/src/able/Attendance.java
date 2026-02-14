@@ -1,4 +1,4 @@
-package able;
+package InstructorA.src.able;
 
 public interface Attendance extends Actionable { // 인터페이스들 끼리 상속 가능
 	

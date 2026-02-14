@@ -1,6 +1,6 @@
-package products;
+package InstructorA.src.products;
 
-import common.Appliance;
+import InstructorA.src.common.Appliance;
 
 public class Aircon extends Appliance { // 에어컨
 

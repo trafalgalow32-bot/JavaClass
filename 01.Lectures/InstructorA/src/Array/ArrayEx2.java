@@ -1,4 +1,4 @@
-package Array;
+package InstructorA.src.Array;
 
 public class ArrayEx2 {
 

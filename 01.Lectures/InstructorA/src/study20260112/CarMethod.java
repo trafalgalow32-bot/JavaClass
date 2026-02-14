@@ -1,6 +1,4 @@
-package study20260112;
-
-import java.util.Arrays;
+package InstructorA.src.study20260112;
 
 public class CarMethod {
 

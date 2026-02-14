@@ -1,4 +1,4 @@
-package exam17;
+package InstructorB.src.exam17;
 
 public class Outer {
 	private int value = 10;

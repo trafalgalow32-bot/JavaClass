@@ -1,4 +1,4 @@
-package exam23;
+package InstructorB.src.exam23;
 
 /*
 T : Type의 약자

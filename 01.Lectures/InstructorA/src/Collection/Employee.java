@@ -1,4 +1,4 @@
-package Collection;
+package InstructorA.src.Collection;
 // 직장인 클래스
 public class Employee {
 	//이름, 소속, 나이, 연락처, 업무, 희망지역, 희망업무

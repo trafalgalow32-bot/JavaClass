@@ -1,10 +1,10 @@
-package exam29;
+package InstructorB.src.exam29;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import exam28.Information;
+import InstructorB.src.exam28.Information;
 
 /* 회원 관리 : 목록, 상세보기, 등록, 수정, 삭제
 아이디 비밀번호 이름 연락처 주소(대전 서울 충남)

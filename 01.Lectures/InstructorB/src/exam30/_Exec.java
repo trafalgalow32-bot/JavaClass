@@ -1,8 +1,6 @@
-package exam30;
+package InstructorB.src.exam30;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Scanner;
 
 public class _Exec {

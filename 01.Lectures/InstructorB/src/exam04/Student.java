@@ -1,4 +1,4 @@
-package exam04;
+package InstructorB.src.exam04;
 
 public class Student {
 	String name;

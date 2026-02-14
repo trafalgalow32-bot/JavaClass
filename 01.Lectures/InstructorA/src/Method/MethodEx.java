@@ -1,4 +1,4 @@
-package Method;
+package InstructorA.src.Method;
 
 public class MethodEx {
 

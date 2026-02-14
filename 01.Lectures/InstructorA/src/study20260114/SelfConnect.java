@@ -1,6 +1,9 @@
-package study20260114;
+package InstructorA.src.study20260114;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 public class SelfConnect {
 	private Connection conn;

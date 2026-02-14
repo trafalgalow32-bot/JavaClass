@@ -1,4 +1,4 @@
-package exam24;
+package InstructorB.src.exam24;
 
 public class _Exec {
 

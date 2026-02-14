@@ -1,4 +1,4 @@
-package exam30;
+package InstructorB.src.exam30;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,7 +6,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class StudentDAO { // 실행 클래스에 insert 기능을 한꺼번에 코딩하면 코드가 너무 길어지니... 객체를 별도로 생성, 그리고 실행
 	// 클래스에서 객체 생성한 이곳을 불러오기!

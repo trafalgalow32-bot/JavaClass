@@ -1,4 +1,4 @@
-package dto;
+package InstructorA.src.dto;
 
 public class DessertOrder extends BaseOrder{
 

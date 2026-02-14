@@ -1,4 +1,4 @@
-package common;
+package InstructorA.src.common;
 
 public abstract class Appliance { // 가전 제품(부모클래스)
 
