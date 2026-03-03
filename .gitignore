@@ -2,3 +2,4 @@
 .settings/     # 개인별 이클립스 UI 설정
 .classpath     # 로컬 환경 설정
 .project       # 로컬 프로젝트 설정
+*.pptx         # ppt 임시 파일
